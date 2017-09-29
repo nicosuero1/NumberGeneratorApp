@@ -1,0 +1,19 @@
+{
+  "name": "numbergeneratorapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "uglify": "uglifyjs ./js/qunit.js ./js/numbergenerator.js ./js/test.js  -c -o  public/javascripts/app-uglify.js",
+    "buildStart" : "npm run uglify && npm run start"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "hbs": "~4.0.1",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
+  }
+}
